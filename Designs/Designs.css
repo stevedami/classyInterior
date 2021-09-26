@@ -1,0 +1,260 @@
+body{
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+    height:100%;
+    margin:0;
+    width:100%;
+}
+
+.section1 { 
+    background-image: url("/IMGS/designsBg.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(42, 93, 170);
+    background-size: cover;
+  position: relative;
+  margin: 0;
+    height:30rem;
+}
+.section1 .content{
+ position: absolute;
+ top:0;
+left:0;
+}
+.section1 .content h2{
+    font-family: Poppins,Roboto,Basic;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 20px 45px;
+    color: #fff;
+}
+.section1 .content .contentD{
+    cursor: pointer;
+    margin: 100px 50px;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: Poppins;
+    padding: 0.6em 0.9em;
+    background-color: rgba(211, 147, 64, 0.836);
+    line-height: 1.57rem;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(248, 214, 169, 0.63);
+    position: relative;
+    color: #fff;
+}
+.section1 .content p{
+  margin-top: -10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
+}
+/*section1 ends*/
+.section2{
+    border: none;
+    box-shadow: 0.3px 0.3px 1px 1px rgba(58, 164, 190, 0.767);
+}
+.section2 .designCat{
+    display: flex;
+    flex-direction: row;
+    
+}
+.section2 .designCat a{
+    vertical-align: middle;
+    font-size: 1.0rem;
+    padding:1px 3px;
+    font-weight: 900;
+    color: #333;
+    font-family: Poppins,Basic;
+    text-align: center;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*footer*/
+footer{
+    margin: 0px 0px;
+    background-color: #000;
+    cursor: pointer;
+  }
+  footer .footGrid{
+    display: grid;
+    grid-template-columns: 600px 300px;
+    font-family: Poppins,Basic,Roboto,Helvetica;
+    font-size:28px;
+    color: #fff;
+    margin-left:35px;
+    font-weight: 650;
+    box-sizing: border-box;
+    column-gap: 200px;
+  }
+  footer .footGrid a li{
+    list-style-type: none;
+      font-size: 1.18em;
+      font-weight: 560;
+      font-family:Poppins,Basic,Roboto,Helvetica;
+      text-align: center;
+      margin: 35px 20px;
+      text-decoration: none;
+      transition: 0.5s linear;
+      background: #fff;
+      color: #333;
+      padding: 12px 25px;
+      position:relative;
+      transition: all 0.9s;
+  }
+  hr{
+    width:auto;
+    border: 0.5px solid rgb(38, 74, 90);
+    margin: 15px 30px;
+  }
+  footer .footGrid a li:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0px;
+    width:100%;
+    height:150px;
+    transition: 0.5s linear;
+    opacity: 0;
+    background: linear-gradient(to bottom,rgb(82, 81, 81),transparent);
+  
+  }
+  footer .footerCnt{
+    display: flex;
+    flex-direction: row;
+    color: rgb(117, 114, 114);
+    padding: 60px 0px;
+    box-sizing: border-box;
+    font-size:15px;
+    font-weight:700;
+    font-family:Poppins,Basic,Roboto,Helvetica;
+    text-align: left;
+    text-transform:uppercase;
+  }
+  a{
+    text-decoration: none;
+  }
+  footer h7{
+    color: #fff;
+    position: relative;
+  }
+  footer h7:before{
+    content: "";
+    position: absolute;
+    padding: 2px 15px;
+    left: 0px;
+    width: 0%;
+    background-color: rgb(10, 52, 77);
+    bottom: -5px;
+  }
+  footer .Services{
+  width: 400px;
+  margin-left:60px;
+  }
+  footer .company{
+  width: 150px;
+    margin-left:25px;
+  }
+  footer .designs{
+    width: 230px;
+    margin-left:100px;
+  }
+  footer .media2{
+    width: 250px;
+    margin-left:50px;
+  }
+  footer p{
+    position: relative;
+    transition: all 0.5s;
+  }
+  footer p::before{
+    content:"";
+    position: absolute;
+    left :15px;
+    padding-left:0px;
+    transition: 0.5s;
+    opacity:0;
+  }
+/* animation*/
+.section2 .designCat a:hover{
+    background-color: rgb(102, 68, 17);
+    transition: 0.3s linear;
+    color:#fff;
+}
+footer h7:hover:before{
+    width: 80%;
+    transition: all 2s linear;
+  }
+  footer .footerCnt p:hover{
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  padding-left:25px;
+  }
+  footer .footGrid a li:hover::before{
+  transition:2s ease-in-out;
+  opacity: 0.3;
+  }
+@media screen and (max-width:600px) {
+    .section1 .content h2{
+        font-size: 2rem;
+        margin: 40px 25px;
+    }
+    .section2 .designCat{
+        disply: flex;
+        flx-wrap: wrap;
+        overflow-x: scroll;
+    }
+    .section1 .content .contentD{
+        margin: 50px 10px;
+        text-align:left;
+        font-size: 1rem;
+        padding: 0.5em 0.7em;
+        line-height: 1.57rem;
+    }
+    footer .footGrid{
+        display:flex;
+        flex-direction:column;
+        max-width: 350px;
+        font-size:1.3rem;
+        margin: 5px auto;
+        box-sizing: border-box;
+        }
+        footer .footerCnt{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        font-size:1.1rem;
+        margin: 0px auto;
+        }
+        footer .Services{
+        max-width: 300px;
+        margin-left:25px;
+        }
+        footer .company{
+        max-width: 200px;
+        margin-left:25px;
+        }
+        footer .designs{
+        max-width: 300px;
+        margin-left:25px;
+        }
+        footer .media2{
+        max-width: 200px;
+        margin-left:25px;
+        }
+        footer p{
+        position: relative;
+        transition: all 0.5s;
+        }
+        footer .footGrid a li{
+          font-size: 1.18em;
+          margin:20px auto;
+          padding: 12px 25px;
+        }
+        hr{
+        width:auto;
+        margin:0px auto;
+        }
+}
